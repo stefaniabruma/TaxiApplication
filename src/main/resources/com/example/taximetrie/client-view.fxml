@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="144.0" prefWidth="396.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.taximetrie.ClientController">
+   <children>
+      <Label layoutX="18.0" layoutY="25.0" text="Introduceti locatia:" />
+      <TextField fx:id="locatieTextField" layoutX="131.0" layoutY="21.0" />
+      <Button layoutX="296.0" layoutY="21.0" mnemonicParsing="false" onAction="#handleCauta" text="Cauta" />
+      <Label layoutX="18.0" layoutY="59.0" text="Oferta pentru comanda dvs.:" />
+      <TableView fx:id="oferteTableView" layoutX="181.0" layoutY="59.0" prefHeight="62.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="masinaColumn" prefWidth="102.39996337890625" text="Masina" />
+          <TableColumn fx:id="timpColumn" prefWidth="96.800048828125" text="Timp" />
+        </columns>
+      </TableView>
+      <Button layoutX="30.0" layoutY="89.0" mnemonicParsing="false" onAction="#handleAccept" text="Accept" />
+      <Button layoutX="91.0" layoutY="89.0" mnemonicParsing="false" onAction="#handleCancel" text="Cancel" />
+   </children>
+</AnchorPane>
